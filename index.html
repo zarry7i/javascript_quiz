@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            THE JAVASCRIPT QUIZ
+        </title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="css/myStyle.css">
+        <script type="text/javascript" src="js/myScript.js"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Icon fa --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>       
+    </head>
+
+    <body>
+        
+        <!-- start main div -->
+        <div style="width: 90%; margin: 0 auto;">
+
+            <!-- preload image -->
+            <div style="display: none;">
+                <img src="img/quiz.gif">
+                <img src="img/que.gif">
+                <img src="img/cross.gif">
+                <img src="img/tick.gif">
+            </div>
+        
+            <!-- start header div -->
+            <div style="text-align: center;">
+                <h2>The JavaScript Quiz</h1>
+                <img src="img/quiz.gif" id="headImg">
+                <h2 id="msg">Test Your JavaScript Knowledge</h2>
+                <button id="startBtn" class="btn" onclick="start()">Start</button>
+            </div>
+            <!-- close header div -->
+
+
+
+            <!-- start question1 div -->
+            <div class="question" id="question0">
+                <h3>Q1. JavaScript is a _______ language.</h3>
+                
+                <form>
+                    <table cellpadding="10" align="center">
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q1" value="ans1a" id="ans1a">programming
+                            </td>
+                            <td>
+                                <input type="radio" name="q1" value="ans1b" id="ans1b">scripting
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q1" value="ans1c" id="ans1c">markup
+                            </td>
+                            <td>
+                                <input type="radio" name="q1" value="ans1d" id="ans1d">none of the above
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class="ansDiv" id="ansBlock0">
+                                Correct.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" class="btn" value="Submit" id="0" onclick="check(this.id)">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+            <!-- end question1 div -->
+
+
+
+            <!-- start question2 div -->
+            <div class="question" id="question1">
+                <h3>Q2. Which of the following is an advantage of using JavaScript?</h3>
+                
+                <form>
+                    <table cellpadding="10" align="center">
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q2" value="ans2a" id="ans2a">Less server interaction
+                            </td>
+                            <td>
+                                <input type="radio" name="q2" value="ans2b" id="ans2b">Immediate feedback to the visitors
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q2" value="ans2c" id="ans2c">Increased interactivity
+                            </td>
+                            <td>
+                                <input type="radio" name="q2" value="ans2d" id="ans2d">All of the above
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class="ansDiv" id="ansBlock1">
+                                Correct.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" class="btn" value="Submit" id="1" onclick="check(this.id)">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+            <!-- end question2 div -->
+
+
+
+            <!-- start question3 div -->
+            <div class="question" id="question2">
+                <h3>Q3. Which built-in method combines the text of two strings and returns a new string?</h3>
+                
+                <form>
+                    <table cellpadding="10" align="center">
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q3" value="ans3a" id="ans3a">append()
+                            </td>
+                            <td>
+                                <input type="radio" name="q3" value="ans3b" id="ans3b">concat()
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q3" value="ans3c" id="ans3c">attach()
+                            </td>
+                            <td>
+                                <input type="radio" name="q3" value="ans3d" id="ans3d">None of the above
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class="ansDiv" id="ansBlock2">
+                                Correct.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" class="btn" value="Submit" id="2" onclick="check(this.id)">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+            <!-- end question3 div -->
+
+
+
+            <!-- start question4 div -->
+            <div class="question" id="question3">
+                <h3>Q4. Which of the following function of Number object forces a number to display in exponential notation?</h3>
+                
+                <form>
+                    <table cellpadding="10" align="center">
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q4" value="ans4a" id="ans4a">toExponential()
+                            </td>
+                            <td>
+                                <input type="radio" name="q4" value="ans4b" id="ans4b">toFixed()
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q4" value="ans4c" id="ans4c">toPrecision()
+                            </td>
+                            <td>
+                                <input type="radio" name="q4" value="ans4d" id="ans4d">toLocaleString()
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class="ansDiv" id="ansBlock3">
+                                Correct.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" class="btn" value="Submit" id="3" onclick="check(this.id)">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+            <!-- end question4 div -->
+
+
+
+            <!-- start question5 div -->
+            <div class="question" id="question4">
+                <h3>Q5. Which of the following function of String object returns the character at the specified index?</h3>
+                
+                <form>
+                    <table cellpadding="10" align="center">
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q5" value="ans5a" id="ans5a">charAt()
+                            </td>
+                            <td>
+                                <input type="radio" name="q5" value="ans5b" id="ans5b">charCodeAt()
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q5" value="ans5c" id="ans5c">concat()
+                            </td>
+                            <td>
+                                <input type="radio" name="q5" value="ans5d" id="ans5d">indexOf()
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class="ansDiv" id="ansBlock4">
+                                Correct.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" class="btn" value="Submit" id="4" onclick="check(this.id)">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+            <!-- end question5 div -->
+
+
+
+            <!-- start question6 div -->
+            <div class="question" id="question5">
+                <h3>Q6. Which of the following function of String object is used to match a regular expression against a string?</h3>
+                
+                <form>
+                    <table cellpadding="10" align="center">
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q6" value="ans6a" id="ans6a">concat()
+                            </td>
+                            <td>
+                                <input type="radio" name="q6" value="ans6b" id="ans6b">match()
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q6" value="ans6c" id="ans6c">search()
+                            </td>
+                            <td>
+                                <input type="radio" name="q6" value="ans6d" id="ans6d">replace()
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class="ansDiv" id="ansBlock5">
+                                Correct.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" class="btn" value="Submit" id="5" onclick="check(this.id)">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+            <!-- end question6 div -->
+
+
+
+            <!-- start question7 div -->
+            <div class="question" id="question6">
+                <h3>Q7. Which of the following function of String object returns a string representing the specified object?</h3>
+                
+                <form>
+                    <table cellpadding="10" align="center">
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q7" value="ans7a" id="ans7a">toLocaleUpperCase()
+                            </td>
+                            <td>
+                                <input type="radio" name="q7" value="ans7b" id="ans7b">toUppercase()
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q7" value="ans7c" id="ans7c">toString()
+                            </td>
+                            <td>
+                                <input type="radio" name="q7" value="ans7d" id="ans7d">substring()
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class="ansDiv" id="ansBlock6">
+                                Correct.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" class="btn" value="Submit" id="6" onclick="check(this.id)">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+            <!-- end question7 div -->
+
+
+
+            <!-- start question8 div -->
+            <div class="question" id="question7">
+                <h3>Q8. Which of the following function of String object creates an HTML hypertext link that requests another URL?</h3>
+                
+                <form>
+                    <table cellpadding="10" align="center">
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q8" value="ans8a" id="ans8a">link()
+                            </td>
+                            <td>
+                                <input type="radio" name="q8" value="ans8b" id="ans8b">sub()
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q8" value="ans8c" id="ans8c">sup()
+                            </td>
+                            <td>
+                                <input type="radio" name="q8" value="ans8d" id="ans8d">small()
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class="ansDiv" id="ansBlock7">
+                                Correct.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" class="btn" value="Submit" id="7" onclick="check(this.id)">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+            <!-- end question8 div -->
+
+
+
+            <!-- start question9 div -->
+            <div class="question" id="question8">
+                <h3>Q9. Which of the following function of Array object calls a function for each element in the array?</h3>
+                
+                <form>
+                    <table cellpadding="10" align="center">
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q9" value="ans9a" id="ans9a">concat()
+                            </td>
+                            <td>
+                                <input type="radio" name="q9" value="ans9b" id="ans9b">every()
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q9" value="ans9c" id="ans9c">filter()
+                            </td>
+                            <td>
+                                <input type="radio" name="q9" value="ans9d" id="ans9d">forEach()
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class="ansDiv" id="ansBlock8">
+                                Correct.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" class="btn" value="Submit" id="8" onclick="check(this.id)">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+            <!-- end question9 div -->
+
+
+
+            <!-- start question10 div -->
+            <div class="question" id="question9">
+                <h3>Q10. Which of the following function of Array object returns true if at least one element in this array satisfies the provided testing function?</h3>
+                
+                <form>
+                    <table cellpadding="10" align="center">
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q10" value="ans10a" id="ans10a">reverse()
+                            </td>
+                            <td>
+                                <input type="radio" name="q10" value="ans10b" id="ans10b">shift()
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>
+                                <input type="radio" name="q10" value="ans10c" id="ans10c">slice()
+                            </td>
+                            <td>
+                                <input type="radio" name="q10" value="ans10d" id="ans10d">some()
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class="ansDiv" id="ansBlock9">
+                                Correct.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="button" class="btn" value="Submit" id="9" onclick="check(this.id)">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </div>
+            <!-- end question10 div -->
+
+
+
+        </div>
+        <!-- close main div -->
+        
+
+        <!-- Footer section -->
+        <footer style="font-family: lucida console;">
+            <p class="copy">&copy; Copyright 2021</p>
+            <p class="footer">
+                <a style="text-decoration: none; color: black;" href="https://github.com/zarry7i/javascript_quiz" target="_blank">&lt;&#x2215;&gt;</a> with 
+                <a style="text-decoration: none;" href="https://github.com/zarry7i/" target="_blank"><i style="color: black;" class="fas fa-heart"></i></a> by
+                <a style="text-decoration: none;" href="https://zarry7i.github.io" target="_blank"><img style="color-fill: #495057;; width: 15x; height: 15px" src="img/zarry7i.png"></a>
+            </p>
+        </footer>
+
+    </body>
+</html>

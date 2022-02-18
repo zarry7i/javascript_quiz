@@ -1,4 +1,4 @@
-# [The JavaScript Quiz](https://zarry7i.github.io/javascirpt_quiz/)
+# [The JavaScript Quiz](https://zarry7i.github.io/javascript_quiz/)
 > A quiz website to test JS knowledge
 ![screen](quiz-shot.jpg)
 
